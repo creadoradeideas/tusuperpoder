@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Interactiva: Tu Historia, Tu Elección</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Paleta Elegida: Energética y Acogedora (#0abab5 y #E07A5F) -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F7F4;
+            color: #3D405B;
+        }
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            color: #0abab5;
+            line-height: 1;
+            margin: 0.5rem 0;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+        }
+        th {
+            background-color: #DDDDDD; /* Gris claro para el encabezado de la tabla */
+            color: #3D405B;
+            font-weight: bold;
+        }
+        td {
+            background-color: #ffffff;
+        }
+        .prompt-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 1rem;
+            text-align: left;
+        }
+        .prompt-list li {
+            background-color: #f9f9f9;
+            border-left: 4px solid #0abab5; /* Color principal */
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#3D405B] mb-4">Tu Historia, Tu Elección</h1>
+            <p class="text-xl text-[#E07A5F] font-medium">Del Rol de Víctima a Descubrir Tu Capa de Héroe/Heroína</p>
+        </header>
+
+        <section id="intro" class="mb-20">
+            <div class="card max-w-2xl mx-auto text-center p-8 bg-white border-t-8 border-[#E07A5F] mb-12">
+                <h3 class="text-2xl font-bold mb-4 text-[#E07A5F]">¡Atención! Este es un ejercicio de compromiso.</h3>
+                <p class="text-lg text-gray-700 mb-4">
+                    Este proceso de autoindagación te tomará aproximadamente <strong>20 minutos</strong> de total concentración.
+                </p>
+                <p class="text-xl font-bold text-[#3D405B]">
+                    Si no tienes este tiempo para ti, para conectar y para escribir con honestidad, no lo hagas ahora.
+                </p>
+                <p class="text-xl font-bold text-[#0abab5] mt-4">
+                    <span class="text-2xl">HAZLO AHORA</span> si te comprometes al 100% con tu transformación.
+                </p>
+            </div>
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-4">El Poder de Tu Narrativa Interna</h2>
+                <p class="text-lg text-gray-700">
+                    <strong>¿Alguna vez te has sentido atrapado/a en una situación, culpando a las circunstancias externas, con la sensación de que las cosas simplemente te "pasan"?</strong> Por ejemplo, "(otra vez no hice ejercicio, siempre me gana la flojera)" o "(no puedo ahorrar dinero porque todo está muy caro -sin considerar mis gastos en compras innecesarias-)". Esto es lo que llamamos la mentalidad de víctima, una serie de patrones de pensamiento que te impiden tomar el control. Este ejercicio está diseñado para ayudarte a tomar las riendas de tu bienestar emocional observando tu perspectiva y transformando tu diálogo interno, y se basa en la premisa de que <strong>siempre tienes el poder de elegir</strong> tu rol. Puedes elegir conscientemente quedarte en el papel de víctima o asumir tu rol de héroe/heroína.
+                </p>
+            </div>
+        </section>
+
+        <section id="ciencia-cambio" class="mb-20">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold mb-4">La Ciencia Detrás del Cambio</h2>
+                <p class="text-lg text-gray-700">
+                    La transformación personal no es solo un acto de voluntad; es un proceso neurobiológico. A través de la <strong>neuroplasticidad</strong>, tu cerebro tiene la capacidad de formar y reorganizar conexiones neuronales. Cada vez que cambias tu narrativa interna, estás fortaleciendo un nuevo camino neuronal.
+                </p>
+                <p class="text-lg text-gray-700 mt-4">
+                    Existen varias herramientas para lograrlo, y una de las más poderosas es a través de ejercicios autodidactas de <strong>escritura y reflexión</strong> (como esta práctica). Al poner tus pensamientos en papel o escribirlos como en este ejercicio, activas nuevas rutas neuronales, permitiendo que tu mente vea y procese la información de una manera diferente. Esta práctica constante es el combustible que genera un cambio real y duradero en tu cerebro.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="card text-center">
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h3 class="text-2xl font-bold">Nivel Consciente</h3>
+                    <p class="mt-2 text-gray-600">Al escribir tus historias, las observas con distancia, lo que te permite elegir una narrativa diferente en lugar de reaccionar en piloto automático.</p>
+                </div>
+                <div class="card text-center">
+                     <div class="text-4xl mb-4">⚡️</div>
+                    <h3 class="text-2xl font-bold">Nivel Subconsciente</h3>
+                    <p class="mt-2 text-gray-600">Cada vez que te cuentas una nueva historia o recreas tu narrativa, fortaleces un nuevo circuito neuronal. Con el tiempo, este se convierte en tu camino predeterminado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="exercise" class="mb-20">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold mb-4">El Ejercicio Central: Reescribiendo Tu Historia ✨</h2>
+                <p class="text-lg text-gray-700">
+                    El corazón del ejercicio es un ejercicio de poder. Para empezar, vamos a identificar la mentalidad de víctima con este breve resumen. Al contrastar esta versión de ti con la del "héroe/heroína", activas tu poder para elegir la perspectiva que crea tu realidad.
+                </p>
+            </div>
+           
+            <!-- Nueva sección para identificar la mentalidad de víctima -->
+            <div class="card max-w-4xl mx-auto mb-12 border-t-8 border-[#0abab5] p-8">
+                <h3 class="text-2xl font-bold mb-4 text-[#E07A5F]">¿Cómo Reconocer si estás Actuando como Víctima?</h3>
+                <p class="text-lg text-gray-700 mb-4">Hay varios signos clave que te ayudan a identificar si estás adoptando este patrón de pensamiento:</p>
+                <ul class="list-disc list-inside text-left space-y-4 text-gray-700">
+                    <li>
+                        <strong>El lenguaje que utilizas:</strong> Presta atención a tus palabras. Si con frecuencia usas frases como "No puedo", "Siempre me pasan cosas malas" o "No es mi culpa, fue por culpa de los demás", estás reflejando una sensación de impotencia y evadiendo la responsabilidad personal.
+                    </li>
+                    <li>
+                        <strong>La culpa siempre está afuera:</strong> La característica más fuerte de la mentalidad de víctima es la tendencia a culpar a factores externos. Esto puede incluir culpar a tu jefe por no ascenderte, al clima por tus planes fallidos o a tu pareja por tus sentimientos.
+                    </li>
+                </ul>
+            </div>
+            <!-- Fin de la nueva sección -->
+           
+            <div class="table-container max-w-4xl mx-auto mb-12">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mentalidad de Víctima</th>
+                            <th>Mentalidad de Héroe/Heroína</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Foco:</strong> El problema, la culpa.</td>
+                            <td><strong>Foco:</strong> La solución, la responsabilidad.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Poder:</strong> Externo. "Me hicieron", "la situación no me dejó".</td>
+                            <td><strong>Poder:</strong> Interno. "Yo decido cómo responder", "qué puedo hacer al respecto".</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Resultado:</strong> Frustración, estancamiento.</td>
+                            <td><strong>Resultado:</strong> Empoderamiento, acción.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <div class="card border-t-4 border-gray-300">
+                    <h3 class="text-2xl font-bold text-center mb-4">Paso 1: La Historia de la Víctima <span class="text-4xl align-middle">😩</span></h3>
+                    <p class="text-center text-gray-700 mb-4">Conecta con una situación reciente que te haya causado frustración. Ahora, <strong>reflexiona y apóyate de estas preguntas</strong> asumiendo que las circunstancias son las culpables. Permítete sentir esa emoción.</p>
+                    <div class="flex flex-col items-center text-center">
+                        <textarea id="victimStory" class="w-full h-48 p-4 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-300" placeholder="Escribe tu historia desde la perspectiva de la víctima..."></textarea>
+                        <ul class="prompt-list w-full mt-4">
+                            <li><strong>Reflexiona:</strong> ¿A quién estás culpando por tu situación de vida actual?</li>
+                            <li><strong>Reflexiona:</strong> ¿Qué beneficios tiene para ti ser una víctima?</li>
+                            <li><strong>Reflexiona:</strong> ¿Qué pasaría si dejaras de culpar a los demás?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card border-t-4 border-[#0abab5]">
+                    <h3 class="text-2xl font-bold text-center mb-4">Paso 2: La Historia del Héroe/Heroína <span class="text-4xl align-middle">🦸</span></h3>
+                    <p class="text-center text-gray-700 mb-4">Ahora, con una respiración profunda, vuelve a esa misma situación. <strong>reflexiona y apóyate de estas preguntas</strong> desde la perspectiva de un héroe/heroína que tiene el control total de su narrativa. ¿Qué decisiones tomas para mejorar tu futuro?</p>
+                    <div class="flex flex-col items-center text-center">
+                        <textarea id="heroStory" class="w-full h-48 p-4 border border-[#0abab5] rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#0abab5]" placeholder="Ahora, reescribe la misma historia desde la perspectiva del héroe/heroína..."></textarea>
+                        <ul class="prompt-list w-full mt-4">
+                            <li><strong>Reflexiona:</strong> ¿Qué pasaría si dejaras de sufrir y tomaras la decisión de hacerlo diferente?</li>
+                            <li><strong>Reflexiona:</strong> ¿Qué significa para ti asumir la responsabilidad en esta situación?</li>
+                            <li><strong>Reflexiona:</strong> ¿Cómo empezarías? ¿Qué recursos tuyos puedes usar? (Ejemplos: audacia, conciencia, disciplina, paciencia, resiliencia)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-12 max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-center mb-4">Mi Resumen Personal: De la Víctima al Héroe</h3>
+                <p class="text-center text-gray-700 mb-4">
+                    Con tus reflexiones anteriores, llena estos hallazgos acerca de la situación que reescribiste, es decir, qué comportamientos tenías cuando actuaste como víctima y cuáles descubriste que puedes transformar como héroe.
+                </p>
+                <div class="table-container">
+                    <table class="mt-4">
+                        <thead>
+                            <tr>
+                                <th class="w-1/2">Hallazgos en el rol de Víctima</th>
+                                <th class="w-1/2">Mi Definición de Héroe/Heroína</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><textarea class="w-full h-24 p-2 border border-gray-300 rounded-lg text-sm" placeholder="Comportamiento 1..."></textarea></td>
+                                <td><textarea class="w-full h-24 p-2 border border-[#0abab5] rounded-lg text-sm" placeholder="Comportamiento 1..."></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><textarea class="w-full h-24 p-2 border border-gray-300 rounded-lg text-sm" placeholder="Comportamiento 2..."></textarea></td>
+                                <td><textarea class="w-full h-24 p-2 border border-[#0abab5] rounded-lg text-sm" placeholder="Comportamiento 2..."></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><textarea class="w-full h-24 p-2 border border-gray-300 rounded-lg text-sm" placeholder="Comportamiento 3..."></textarea></td>
+                                <td><textarea class="w-full h-24 p-2 border border-[#0abab5] rounded-lg text-sm" placeholder="Comportamiento 3..."></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="key-actions" class="text-center mb-20">
+            <div class="max-w-3xl mx-auto card bg-white border-t-8 border-[#E07A5F] p-8">
+                <h2 class="text-3xl font-bold mb-4 text-[#E07A5F]">Acciones Clave</h2>
+                <ul class="list-disc list-inside text-left space-y-2 text-lg text-gray-700 max-w-xl mx-auto">
+                    <li>Observa algunas otras situaciones donde actuaste como víctima y reescríbelas desde la perspectiva del héroe/heroína.</li>
+                    <li>Practica la autoobservación a lo largo de la semana, sin juzgarte. ¡Ya has dado un gran paso!</li>
+                    <li>Puedes volver a este ejercicio cuando identifiques una situación donde no estás siendo responsable o que te hace sentir mal con tu propio comportamiento.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="commitment" class="text-center mb-20">
+             <div class="max-w-3xl mx-auto card bg-[#3D405B] text-white">
+                <h2 class="text-3xl font-bold mb-4 text-[#0abab5]">Tu Próximo Paso: El Compromiso</h2>
+                <p class="text-lg mb-6">
+                    Elige una pequeña acción para las próximas 24 horas que refleje tu nueva mentalidad. <strong>¡Escribe una carta a tu futuro yo!</strong> Describe la situación que reescribiste, el héroe que elegiste ser y el cambio que te comprometes a realizar.
+                </p>
+                <div class="flex justify-center mb-6 text-5xl">💌</div>
+                <textarea id="futureSelfLetter" class="w-full h-48 p-4 border border-gray-300 rounded-lg text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0abab5]" placeholder="Querido/a yo del futuro, hoy elegí..."></textarea>
+            </div>
+        </section>
+
+        <section id="cta" class="text-center">
+            <div class="max-w-3xl mx-auto card bg-white">
+                <h2 class="text-3xl font-bold mb-4 text-[#E07A5F]">¡Lleva tu Transformación al Siguiente Nivel!</h2>
+                <p class="text-lg mb-6">
+                    Si te ha gustado este ejercicio, puedes seguir profundizando en el camino de la autotransformación con estas herramientas adicionales.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://example.com/pdf-link" target="_blank" class="bg-[#0abab5] text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-[#E07A5F] transition-colors duration-300">
+                        Adquiere el PDF con Ejercicios
+                    </a>
+                    <a href="https://example.com/curso-link" target="_blank" class="bg-[#E07A5F] text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-[#0abab5] transition-colors duration-300">
+                        Adquiere el Curso Completo
+                    </a>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">*(Los enlaces son de ejemplo.)</p>
+            </div>
+        </section>
+    </main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Obtenemos todos los elementos de textarea que necesitamos guardar
+        const textareasToSave = document.querySelectorAll('textarea');
+        const summaryTextareas = document.querySelectorAll('#exercise table textarea');
+
+        // Función para cargar los datos desde localStorage
+        function loadData() {
+            // Cargar historia de la víctima
+            const victimStory = localStorage.getItem('victimStory');
+            if (victimStory) {
+                document.getElementById('victimStory').value = victimStory;
+            }
+
+            // Cargar historia del héroe
+            const heroStory = localStorage.getItem('heroStory');
+            if (heroStory) {
+                document.getElementById('heroStory').value = heroStory;
+            }
+
+            // Cargar la carta al futuro yo
+            const futureSelfLetter = localStorage.getItem('futureSelfLetter');
+            if (futureSelfLetter) {
+                document.getElementById('futureSelfLetter').value = futureSelfLetter;
+            }
+
+            // Cargar los datos del resumen personal (tabla)
+            const summaryData = JSON.parse(localStorage.getItem('summaryData'));
+            if (summaryData) {
+                summaryTextareas.forEach((textarea, index) => {
+                    if (summaryData[index]) {
+                        textarea.value = summaryData[index];
+                    }
+                });
+            }
+        }
+
+        // Función para guardar todos los datos en localStorage
+        function saveData() {
+            // Guardar historia de la víctima
+            localStorage.setItem('victimStory', document.getElementById('victimStory').value);
+
+            // Guardar historia del héroe
+            localStorage.setItem('heroStory', document.getElementById('heroStory').value);
+
+            // Guardar la carta al futuro yo
+            localStorage.setItem('futureSelfLetter', document.getElementById('futureSelfLetter').value);
+
+            // Guardar los datos del resumen personal (tabla)
+            const summaryData = [];
+            summaryTextareas.forEach(textarea => {
+                summaryData.push(textarea.value);
+            });
+            localStorage.setItem('summaryData', JSON.stringify(summaryData));
+        }
+
+        // Agregar event listeners para guardar los datos cada vez que se cambia un textarea
+        textareasToSave.forEach(textarea => {
+            textarea.addEventListener('input', saveData);
+        });
+
+        // Cargar los datos al iniciar la página
+        loadData();
+    });
+</script>
+</body>
+</html>
