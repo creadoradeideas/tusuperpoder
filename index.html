@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Paleta Elegida: Energética y Acogedora (#0abab5 y #E07A5F) -->
+    <!-- Paleta de Colores: #0abab5 (acentos), #800020 (acentos), #f5f5dc (fondo) -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #F8F7F4;
+            background-color: #f5f5dc; /* Color de fondo principal */
             color: #3D405B;
         }
         .card {
@@ -47,7 +47,7 @@
             border: 1px solid #e5e7eb;
         }
         th {
-            background-color: #DDDDDD; /* Gris claro para el encabezado de la tabla */
+            background-color: #DDDDDD;
             color: #3D405B;
             font-weight: bold;
         }
@@ -62,7 +62,7 @@
         }
         .prompt-list li {
             background-color: #f9f9f9;
-            border-left: 4px solid #0abab5; /* Color principal */
+            border-left: 4px solid #0abab5; /* Color de acento */
             padding: 0.75rem;
             margin-bottom: 0.5rem;
             border-radius: 0.25rem;
@@ -77,12 +77,12 @@
 
         <header class="text-center mb-16">
             <h1 class="text-4xl md:text-5xl font-bold text-[#3D405B] mb-4">Tu Historia, Tu Elección</h1>
-            <p class="text-xl text-[#E07A5F] font-medium">Del Rol de Víctima a Descubrir Tu Capa de Héroe/Heroína</p>
+            <p class="text-xl text-[#800020] font-medium">Del Rol de Víctima a Descubrir Tu Capa de Héroe/Heroína</p>
         </header>
 
         <section id="intro" class="mb-20">
-            <div class="card max-w-2xl mx-auto text-center p-8 bg-white border-t-8 border-[#E07A5F] mb-12">
-                <h3 class="text-2xl font-bold mb-4 text-[#E07A5F]">¡Atención! Este es un ejercicio de compromiso.</h3>
+            <div class="card max-w-2xl mx-auto text-center p-8 bg-white border-t-8 border-[#800020] mb-12">
+                <h3 class="text-2xl font-bold mb-4 text-[#800020]">¡Atención! Este es un ejercicio de compromiso.</h3>
                 <p class="text-lg text-gray-700 mb-4">
                     Este proceso de autoindagación te tomará aproximadamente <strong>20 minutos</strong> de total concentración.
                 </p>
@@ -127,7 +127,7 @@
 
         <section id="exercise" class="mb-20">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-3xl font-bold mb-4">El Ejercicio Central: Reescribiendo Tu Historia ✨</h2>
+                <h2 class="text-3xl font-bold mb-4">El Ejercicio Central: Reescribiendo Tu Historia </h2>
                 <p class="text-lg text-gray-700">
                     El corazón del ejercicio es un ejercicio de poder. Para empezar, vamos a identificar la mentalidad de víctima con este breve resumen. Al contrastar esta versión de ti con la del "héroe/heroína", activas tu poder para elegir la perspectiva que crea tu realidad.
                 </p>
@@ -135,7 +135,7 @@
            
             <!-- Nueva sección para identificar la mentalidad de víctima -->
             <div class="card max-w-4xl mx-auto mb-12 border-t-8 border-[#0abab5] p-8">
-                <h3 class="text-2xl font-bold mb-4 text-[#E07A5F]">¿Cómo Reconocer si estás Actuando como Víctima?</h3>
+                <h3 class="text-2xl font-bold mb-4 text-[#800020]">¿Cómo Reconocer si estás Actuando como Víctima?</h3>
                 <p class="text-lg text-gray-700 mb-4">Hay varios signos clave que te ayudan a identificar si estás adoptando este patrón de pensamiento:</p>
                 <ul class="list-disc list-inside text-left space-y-4 text-gray-700">
                     <li>
@@ -175,7 +175,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
                 <div class="card border-t-4 border-gray-300">
-                    <h3 class="text-2xl font-bold text-center mb-4">Paso 1: La Historia de la Víctima <span class="text-4xl align-middle">😩</span></h3>
+                    <h3 class="text-2xl font-bold text-center mb-4">Paso 1: La Historia de la Víctima <span class="text-4xl align-middle">🎭</span></h3>
                     <p class="text-center text-gray-700 mb-4">Conecta con una situación reciente que te haya causado frustración. Ahora, <strong>reflexiona y apóyate de estas preguntas</strong> asumiendo que las circunstancias son las culpables. Permítete sentir esa emoción.</p>
                     <div class="flex flex-col items-center text-center">
                         <textarea id="victimStory" class="w-full h-48 p-4 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-gray-300" placeholder="Escribe tu historia desde la perspectiva de la víctima..."></textarea>
@@ -187,7 +187,7 @@
                     </div>
                 </div>
                 <div class="card border-t-4 border-[#0abab5]">
-                    <h3 class="text-2xl font-bold text-center mb-4">Paso 2: La Historia del Héroe/Heroína <span class="text-4xl align-middle">🦸</span></h3>
+                    <h3 class="text-2xl font-bold text-center mb-4">Paso 2: La Historia del Héroe/Heroína <span class="text-4xl align-middle">✨</span></h3>
                     <p class="text-center text-gray-700 mb-4">Ahora, con una respiración profunda, vuelve a esa misma situación. <strong>reflexiona y apóyate de estas preguntas</strong> desde la perspectiva de un héroe/heroína que tiene el control total de su narrativa. ¿Qué decisiones tomas para mejorar tu futuro?</p>
                     <div class="flex flex-col items-center text-center">
                         <textarea id="heroStory" class="w-full h-48 p-4 border border-[#0abab5] rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#0abab5]" placeholder="Ahora, reescribe la misma historia desde la perspectiva del héroe/heroína..."></textarea>
@@ -233,8 +233,8 @@
         </section>
 
         <section id="key-actions" class="text-center mb-20">
-            <div class="max-w-3xl mx-auto card bg-white border-t-8 border-[#E07A5F] p-8">
-                <h2 class="text-3xl font-bold mb-4 text-[#E07A5F]">Acciones Clave</h2>
+            <div class="max-w-3xl mx-auto card bg-white border-t-8 border-[#800020] p-8">
+                <h2 class="text-3xl font-bold mb-4 text-[#800020]">Acciones Clave</h2>
                 <ul class="list-disc list-inside text-left space-y-2 text-lg text-gray-700 max-w-xl mx-auto">
                     <li>Observa algunas otras situaciones donde actuaste como víctima y reescríbelas desde la perspectiva del héroe/heroína.</li>
                     <li>Practica la autoobservación a lo largo de la semana, sin juzgarte. ¡Ya has dado un gran paso!</li>
@@ -244,7 +244,7 @@
         </section>
 
         <section id="commitment" class="text-center mb-20">
-             <div class="max-w-3xl mx-auto card bg-[#3D405B] text-white">
+             <div class="max-w-3xl mx-auto card bg-[#008080] text-[#f5f5dc]">
                 <h2 class="text-3xl font-bold mb-4 text-[#0abab5]">Tu Próximo Paso: El Compromiso</h2>
                 <p class="text-lg mb-6">
                     Elige una pequeña acción para las próximas 24 horas que refleje tu nueva mentalidad. <strong>¡Escribe una carta a tu futuro yo!</strong> Describe la situación que reescribiste, el héroe que elegiste ser y el cambio que te comprometes a realizar.
@@ -256,22 +256,24 @@
 
         <section id="cta" class="text-center">
             <div class="max-w-3xl mx-auto card bg-white">
-                <h2 class="text-3xl font-bold mb-4 text-[#E07A5F]">¡Lleva tu Transformación al Siguiente Nivel!</h2>
+                <h2 class="text-3xl font-bold mb-4 text-[#800020]">¡Lleva tu Transformación al Siguiente Nivel!</h2>
                 <p class="text-lg mb-6">
                     Si te ha gustado este ejercicio, puedes seguir profundizando en el camino de la autotransformación con estas herramientas adicionales.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="https://example.com/pdf-link" target="_blank" class="bg-[#0abab5] text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-[#E07A5F] transition-colors duration-300">
-                        Adquiere el PDF con Ejercicios
+                    <a href="https://forms.gle/45v5xPX3EQmeWZMcA" target="_blank" class="bg-[#0abab5] text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-[#800020] transition-colors duration-300">
+                        Quiero Transformar mi Historia
                     </a>
-                    <a href="https://example.com/curso-link" target="_blank" class="bg-[#E07A5F] text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-[#0abab5] transition-colors duration-300">
-                        Adquiere el Curso Completo
-                    </a>
+                    <button onclick="window.print()" class="bg-[#800020] text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-[#0abab5] transition-colors duration-300">
+                        Descargar PDF
+                    </button>
                 </div>
-                <p class="text-sm text-gray-500 mt-4">*(Los enlaces son de ejemplo.)</p>
             </div>
         </section>
     </main>
+    <footer class="text-center py-8 text-gray-600">
+        <p>Hecho con ❤️ para ti por @blanca_althea</p>
+    </footer>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
